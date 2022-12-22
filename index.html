@@ -2,79 +2,78 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="fav.ico" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hyperfov Systems</title>
     <meta name="title" content="Hyperfov Systems" />
-    <meta name="description" content="New tools for internet exploration." />
+    <meta name="description" content="Tools for internet exploration." />
 
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://hyperfov.com/" />
     <meta property="og:title" content="Hyperfov Systems" />
+    <meta property="og:description" content="Tools for internet exploration." />
     <meta
-      property="og:description"
-      content="New tools for internet exploration."
+      property="og:image"
+      content="https://hyperfov.com/assets/social.png"
     />
 
-    <style>
-      @font-face {
-        font-family: "Barlow";
-        font-style: normal;
-        font-weight: normal;
-        font-stretch: normal;
-        font-display: swap;
-        src: url("./fonts/Barlow-Regular.woff2") format("woff2");
-      }
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://hyperfov.com/" />
+    <meta property="twitter:title" content="Hyperfov Systems" />
+    <meta
+      property="twitter:description"
+      content="Tools for internet exploration."
+    />
+    <meta
+      property="twitter:image"
+      content="https://hyperfov.com/assets/social.png"
+    />
 
-      @font-face {
-        font-family: "Barlow";
-        font-style: normal;
-        font-weight: bold;
-        font-stretch: normal;
-        font-display: swap;
-        src: url("./fonts/Barlow-Bold.woff2") format("woff2");
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-          sans-serif;
-        background-color: #000;
-        color: #e1e1e1;
-        padding: 0;
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-      }
-      h1 {
-        color: #fff;
-        margin: 5rem 0;
-        font-size: 4rem;
-        max-width: 600px;
-      }
-
-      .logo {
-        max-width: 300px;
-      }
-
-      nav {
-        padding: 30px;
-        width: 100%;
-        background-color: black;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles/global.css" />
   </head>
   <body>
-    <nav><img class="logo" alt="Hyperfov" src="logo.svg" /></nav>
-    <h1>New tools for internet exploration</h1>
+    <nav><img class="logo" alt="Hyperfov" src="./assets/logo.svg" /></nav>
+
+    <div class="wrapper">
+      <h1>Tools for internet exploration.</h1>
+
+      <div class="card">
+        <img
+          alt="Rich previews for any link."
+          src="./assets/link-previews-cropped.png"
+          width="600"
+        />
+        <p>
+          A small typescript package that adds hovercards to arbitrary links on
+          any webpage.
+        </p>
+        <a href="https://github.com/Hyperfov/link-previews" target="_blank"
+          ><button>Hyperfov Link Previews on GitHub &rarr;</button></a
+        >
+      </div>
+
+      <div class="card">
+        <p>More tools coming...</p>
+        <a href="https://futureland.tv/christian/hyperfov" target="_blank"
+          ><button>Follow the progress on Futureland &rarr;</button></a
+        >
+      </div>
+    </div>
+
+    <footer>
+      <img class="logo" alt="Hyperfov" src="./assets/logo-grey.svg" />
+      <span>&copy; 2022 Hyperfov Systems</span>
+      <a href="mailto:hello@hyperfov.com">hello@hyperfov.com</a>
+    </footer>
+
+    <!-- <script src="https://unpkg.com/@hyperfov/link-previews@latest/dist/index.js"></script>
+
+    <script>
+      // now we can call `linkPreview` to add a preview
+      linkPreview("#myLink", {
+        worker: "https://link-to-worker.workers.dev",
+      });
+    </script> -->
   </body>
 </html>
